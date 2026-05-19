@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppings;
+}
+
+:root {
+    --blue: #0065ff;
+    --grey: #c4c4c4;
+    --black:#000000;
+    --white:#FFFFFF;
+    --nav-bg:#f7f9fc;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 34px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu a.active {
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.contact-btn {
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.hero {
+    width: 100%;
+    background: white;
+    position: relative;
+    overflow: visible;
+    padding: 56px 60px;
+    box-sizing: border-box;
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    align-items: center;
+    gap: 36px;
+    position: relative;
+}
+
+.hero-left {position: relative; z-index: 4;}
+
+.hello {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 6px 10px;
+    border: 1px solid grey;
+    color: black;
+    font-size: 18px;
+}
+
+.hero-title {
+    margin: 6px 18px 0;
+    line-height: 1.02;
+    color: #000000;
+    font-weight: 700;
+    font-size: 56px;
+}
+.hero-title .name{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.hero-title .big{
+    display: block;
+    font-size: 64px;
+    line-height: 1.02;
+}
+
+.hero-sub {
+    margin-top: 18px;
+    color: #c4c4c4;
+    font-size: 16px;
+    max-width: 56px;
+}
+
+.hero-ctas {
+    margin-top: 30px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.hero-ctas {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 36px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn-primary {
+    padding: 10px;
+  background: linear-gradient(90deg,lightblue,blue);
+  color: white;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgb(45, 125, 255, 0.16);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #0b0b0b;
+    text-decoration: none;
+}
